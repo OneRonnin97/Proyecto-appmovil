@@ -1,0 +1,36 @@
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h1>COMPAÑIA</h1>
+    <H1>SOBRE NOSOTROS</H1>
+    <H1>TRABAJA CON NOSOTROS</H1>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title class="animated-text">Bienvenido {{data.usuario}} </ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-content class="ion-padding">
+    <ion-card color="medium">
+      <ion-card-header>
+        <ion-card-title>Usuario: {{data.usuario}}</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+  </ion-content>
+</div>
+
