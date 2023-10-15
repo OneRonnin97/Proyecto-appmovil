@@ -1,0 +1,21 @@
+ion-content{
+    --background:rgb(255, 255, 255) ;
+}
+
+.social-btns{
+    text-align: center;
+    ion-button{
+        width: 25px;
+        padding-left: 5px !important;
+    }
+}
+
+.text-tag{
+    margin-top: 30px;
+    text-align: center;
+    span{
+        font-size: 13px;
+        font-weight: normal;
+        color: #898585;
+    }
+}

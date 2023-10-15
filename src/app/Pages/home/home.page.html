@@ -1,0 +1,53 @@
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h1>COMPAÑIA</h1>
+    <H1>SOBRE NOSOTROS</H1>
+    <H1>TRABAJA CON NOSOTROS</H1>
+  </ion-content>
+  
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title class="animated-text">Go! {{data.usuario}} </ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-content>
+    
+    <ion-card class="parking-card">
+      <ion-item>
+        <ion-label>Estacionamiento:</ion-label>
+        <ion-select >
+          <ion-select-option value="estacionamiento1">Estacionamiento 1</ion-select-option>
+          <ion-select-option value="estacionamiento2">Estacionamiento 2</ion-select-option>
+          <ion-select-option value="estacionamiento3">Estacionamiento 3</ion-select-option>
+        </ion-select>
+      </ion-item>
+        <ion-icon name="car-sport"></ion-icon>
+        <p> Disponibles</p>
+  
+    </ion-card>
+  
+    
+    <ion-card class="parking-card">
+      <ion-card-header>
+        <ion-card-title>Tarifas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-icon name="cash"></ion-icon>
+        <p>Tarifa por hora: $1000</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+

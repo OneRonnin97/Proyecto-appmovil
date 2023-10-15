@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ">GO! Parking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  
+ 
+  <ion-card>
+    <div class="container">
+      <ion-img  style="width: 100%;" 
+      src="./assets/icon/logo2.png"
+      alt="logo"
+      
+      ></ion-img>
+      </div>
+    <ion-card-header>
+      <ion-card-title style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ">Iniciar Sesion</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+      
+      <br>
+      <ion-checkbox position="end">Recordarme</ion-checkbox>
+      <br>
+      <ion-button id="cargando" (click)="ingresar()">Ingresar</ion-button>
+      <br>
+      <ion-card-content>
+        <div class="signupLink">
+          <p> ¿Eres nuevo? <a style="color: #FFC33F;" [routerLink]="['/signup']">Registrate ahora </a></p>
+        </div>
+      </ion-card-content>
+      
+      <ion-loading trigger="cargando" message="Conectando..." duration="3000"></ion-loading>
+      
+    </ion-card-content>
+  </ion-card>
+
+ 
+  
+    <div class="text-tag">
+      <span>O inicia sesión por medio de redes sociales</span>
+    </div>
+    <div class="social-btns">
+    <ion-button fill="clear" shape="round" class="facebookbtn ion-no-padding">
+      <ion-img src="assets/images/facebook.png"></ion-img>
+    </ion-button>
+    <ion-button fill="clear" shape="round" class="googlebtn ion-no-padding">
+      <ion-img src="assets/images/google.png"></ion-img>
+    </ion-button>
+    <ion-button fill="clear" shape="round" class="applebtn ion-no-padding">
+      <ion-img src="assets/images/apple.png"></ion-img>
+    </ion-button>
+  </div>
+  
+  
+  
+</ion-content>
