@@ -1,6 +1,6 @@
 .animated-text {
     font-size: 2rem;
-    color: #ffffff; /* Color inicial del texto */
+    color: #000000; /* Color inicial del texto */
     animation: textBounce 1s infinite ;
   }
   
@@ -15,7 +15,7 @@
       transform: translateY(-10px); /* Altura del rebote */
     }
     100% {
-      color: #fbfbfb; /* Color deseado */
+      color: #262525; /* Color deseado */
     }
   }
 

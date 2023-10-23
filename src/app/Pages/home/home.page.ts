@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+
+
 
 @Component({
   selector: 'app-home',
@@ -8,8 +11,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomePage implements OnInit {
 
+  
+
   data:any;
-  constructor(private activateRoute: ActivatedRoute, private router: Router) {
+  
+  constructor(private activateRoute: ActivatedRoute, private router: Router,public toastController: ToastController) {
     
     this.activateRoute.queryParams.subscribe(params =>{
       if (this.router.getCurrentNavigation()?.extras.state) {
@@ -23,5 +29,12 @@ export class HomePage implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-
+  async showToast() {
+    const toast = await this.toastController.create({
+       message: 'El estacionamiento ha sido reservado',
+       duration: 2000
+    });
+    toast.present();
+    }
+  
 }
